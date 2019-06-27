@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "production": "webpack --mode production",
+    "build": "webpack --mode development",
+    "start": "webpack-dev-server"
+  },
+  "author": "anvoevodin",
+  "repository": "https://github.com/ANVoevodin/pixijs_v5_setup.git",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.0.3",
+    "webpack": "^4.33.0",
+    "webpack-cli": "^3.3.3",
+    "webpack-dev-server": "^3.7.1"
+  },
+  "dependencies": {
+    "@pixi/app": "^5.0.4",
+    "@pixi/core": "^5.0.4",
+    "@pixi/loaders": "^5.0.4",
+    "@pixi/sprite": "^5.0.4",
+    "@pixi/ticker": "^5.0.4"
+  }
+}
