@@ -20,8 +20,7 @@ import { Sprite } from '@pixi/sprite'
 // App with width and height of the page
 const app = new Application({
 	width: window.innerWidth,
-	height: window.innerHeight,
-	resolution: window.devicePixelRatio // For good rendering on mobiles
+	height: window.innerHeight
 })
 document.body.appendChild(app.view) // Create Canvas tag in the body
 
