@@ -1,7 +1,7 @@
 // Import Application class that is the main part of our PIXI project
 import { Application } from '@pixi/app'
 
-// In order that PIXI could render thingsб we need to register appropriate plugins
+// In order that PIXI could render things we need to register appropriate plugins
 import { Renderer } from '@pixi/core' // Renderer is the class that is going to register plugins
 
 import { BatchRenderer } from '@pixi/core' // BatchRenderer is the "plugin" for drawing sprites
@@ -25,9 +25,9 @@ const app = new Application({
 document.body.appendChild(app.view) // Create Canvas tag in the body
 
 // Load the logo
-app.loader.add('logo.png')
+app.loader.add('logo', './assets/logo.png')
 app.loader.load(() => {
-	const sprite = Sprite.from('logo.png')
+	const sprite = Sprite.from('logo')
 	sprite.anchor.set(0.5) // We want to rotate our sprite relative to the center, so 0.5
 	app.stage.addChild(sprite)
 
